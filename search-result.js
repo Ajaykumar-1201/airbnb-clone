@@ -6,7 +6,7 @@ const storedGuest = localStorage.getItem("Guest");
 console.log(storedCheckIn, storedCheckOut, storedGuest, storedLocation);
 
 const searchInfo = document.getElementById("search-details");
-searchInfo.innerText = `${storedLocation} || ${storedCheckIn} || ${storedGuest}`;
+searchInfo.innerText = `${storedLocation}`;
 
 const url = `https://airbnb13.p.rapidapi.com/search-location?location=${storedLocation}&checkin=2023-11-16&checkout=2023-11-17&adults=1&children=0&infants=0&pets=0&page=1&currency=USD`;
 const options = {
@@ -87,5 +87,5 @@ window.addEventListener("DOMContentLoaded", () => {
       room_container.appendChild(house);
     }
   }
-  fetchdata();
+//   fetchdata();
 });
