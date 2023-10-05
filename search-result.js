@@ -87,5 +87,5 @@ window.addEventListener("DOMContentLoaded", () => {
       room_container.appendChild(house);
     }
   }
-//   fetchdata();
+  fetchdata();
 });
