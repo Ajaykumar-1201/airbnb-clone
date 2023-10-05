@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div id="logo">
+          <img src="./assets/Vector.svg" />
+        </div>
+
+        <div class="search-bar">
+          <p id="search-details"></p>
+          <button type="submit" id="search-btn">
+            <img src="./assets/Icon Button.svg" />
+          </button>
+        </div>
+
+        <ul id="header-right">
+          <li id="r-1">Become a Host</li>
+          <li id="r-2"><img src="./assets/globe.svg" alt=".." /></li>
+          <li id="r-3">
+            <img src="./assets/Profile Dropdown.svg" alt=".." />
+          </li>
+        </ul>
+      </nav>
+      <div class="search-filters">
+        <span>Price <i class="ri-arrow-down-s-line"></i></span>
+        <span>Type of place <i class="ri-arrow-down-s-line"></i></span>
+        <span>Free Cancellation</span>
+        <span>Wifi</span>
+        <span>Kitchen</span>
+        <span>Washer</span>
+        <span>Dedicated workspace</span>
+        <span>Free parking</span>
+        <span>Dryer</span>
+        <span><i class="ri-equalizer-line"></i> Filters</span>
+      </div>
+    </header>
+    <main>
+      <div class="list-container">
+        <div class="left-col">
+        </div>
+        <div class="right-col" id="map">
+          <iframe
+            src="https://maps.google.com/maps?q=${lat}, ${long}&z=15&output=embed"
+            frameborder="0"
+            id="mapFrame"
+          ></iframe>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-col">
+        <div class="support">
+          <h2>Support</h2>
+          <span>Help Center</span>
+          <span>Safety information</span>
+          <span>Cancellation options</span>
+          <span>Our COVID-19 Response</span>
+          <span>Supporting people with disabilities</span>
+          <span>Report a neighborhoood concern</span>
+        </div>
+        <div class="community">
+          <h2>Community</h2>
+          <span>Airbnb.org: disaster relief housing</span>
+          <span>Support: Afghan refugees</span>
+          <span>Celebrating diversity & belonging</span>
+          <span>Combating discriminatino</span>
+        </div>
+        <div class="hoisting">
+          <h2>Hoisting</h2>
+          <span>Try hosting</span>
+          <span>AirCover: protection for Hosts</span>
+          <span>Visit our community forum</span>
+          <span>Explore hosting resources</span>
+          <span>How to host responsibly</span>
+        </div>
+        <div class="about">
+          <h2>About</h2>
+          <span>Newsroom</span>
+          <span>Learn about new features</span>
+          <span>Letter from our founders</span>
+          <span>Careers</span>
+          <span>Investors</span>
+          <span>Airbnb Luxe</span>
+        </div>
+      </div>
+      <div class="footer-kicker">
+        <div class="right">
+          <span>© 2022 Airbnb, Inc.</span>
+          <span>&middot; Privacy</span>
+          <span>&middot; Terms</span>
+          <span>&middot; Sitemap</span>
+        </div>
+        <div class="left">
+          <span>
+            <!-- <img src="images/globe2.png" alt="" /> -->
+            English (US)</span>
+          <span>
+            <!-- <img src="images/dollar-2.png" alt="" /> -->
+            USD</span>
+          <span>
+            <!-- <img src="images/Social Media.png" alt="" /> -->
+          </span>
+        </div>
+      </div>
+    </footer>
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=de7e35ad70d5d41618048036fe5e6471&callback=initMap" async defer></script> -->
+    <script src="./search-result.js"></script>
+  </body>
+</html>
